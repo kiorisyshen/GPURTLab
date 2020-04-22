@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-#import "Renderer.h"
+#import "RTRenderer.h"
 #include "utils/Logger.hpp"
 
 using namespace GPURTLab;
@@ -16,7 +16,7 @@ using namespace GPURTLab;
 {
     MTKView *_view;
 
-    Renderer *_renderer;
+    RTRenderer *_renderer;
 }
 
 - (void)viewDidLoad
@@ -55,7 +55,7 @@ using namespace GPURTLab;
         return;
     }
 
-    _renderer = [[Renderer alloc] initWithMetalKitView:_view];
+    _renderer = [[RTRenderer alloc] initWithMetalKitView:_view];
 
     [_renderer mtkView:_view drawableSizeWillChange:_view.bounds.size];
 

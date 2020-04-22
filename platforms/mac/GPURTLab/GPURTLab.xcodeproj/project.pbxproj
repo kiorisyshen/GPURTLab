@@ -26,6 +26,13 @@
 		64970A802450624F00867D23 /* RTRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64970A7E2450624F00867D23 /* RTRenderer.mm */; };
 		64970A8A2450675200867D23 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64970A892450675200867D23 /* Logger.cpp */; };
 		64970A8B2450675200867D23 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64970A892450675200867D23 /* Logger.cpp */; };
+		64970A8E245072FD00867D23 /* Scene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64970A8D245072FD00867D23 /* Scene.mm */; };
+		64970A8F245072FD00867D23 /* Scene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64970A8D245072FD00867D23 /* Scene.mm */; };
+		64970A922450734F00867D23 /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64970A902450734F00867D23 /* Transforms.mm */; };
+		64970A932450734F00867D23 /* Transforms.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64970A902450734F00867D23 /* Transforms.mm */; };
+		64970A9724507A7700867D23 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64970A9624507A7700867D23 /* MetalPerformanceShaders.framework */; };
+		64970A9924507EA500867D23 /* RTShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64970A9824507EA500867D23 /* RTShaders.metal */; };
+		64970A9A24507EA500867D23 /* RTShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 64970A9824507EA500867D23 /* RTShaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +62,13 @@
 		64970A822450629000867D23 /* RTRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTRenderer.h; sourceTree = "<group>"; };
 		64970A882450675200867D23 /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
 		64970A892450675200867D23 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		64970A8C245072FD00867D23 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		64970A8D245072FD00867D23 /* Scene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Scene.mm; sourceTree = "<group>"; };
+		64970A902450734F00867D23 /* Transforms.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transforms.mm; sourceTree = "<group>"; };
+		64970A912450734F00867D23 /* Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
+		64970A942450744F00867D23 /* RTShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTShaderTypes.h; sourceTree = "<group>"; };
+		64970A9624507A7700867D23 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		64970A9824507EA500867D23 /* RTShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = RTShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64970A9724507A7700867D23 /* MetalPerformanceShaders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,7 @@
 				64970A4E24503C7C00867D23 /* GPURTLab iOS */,
 				64970A6324503C7C00867D23 /* GPURTLab macOS */,
 				64970A4D24503C7C00867D23 /* Products */,
+				64970A9524507A7700867D23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +110,14 @@
 				64970A4524503C7B00867D23 /* ShaderTypes.h */,
 				64970A4624503C7B00867D23 /* Shaders.metal */,
 				64970A4724503C7C00867D23 /* Assets.xcassets */,
+				64970A942450744F00867D23 /* RTShaderTypes.h */,
 				64970A822450629000867D23 /* RTRenderer.h */,
 				64970A7E2450624F00867D23 /* RTRenderer.mm */,
+				64970A9824507EA500867D23 /* RTShaders.metal */,
+				64970A8C245072FD00867D23 /* Scene.h */,
+				64970A8D245072FD00867D23 /* Scene.mm */,
+				64970A912450734F00867D23 /* Transforms.h */,
+				64970A902450734F00867D23 /* Transforms.mm */,
 			);
 			path = "GPURTLab Shared";
 			sourceTree = "<group>";
@@ -154,6 +176,14 @@
 				64970A892450675200867D23 /* Logger.cpp */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		64970A9524507A7700867D23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64970A9624507A7700867D23 /* MetalPerformanceShaders.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +289,12 @@
 				64970A7024503C7C00867D23 /* Renderer.m in Sources */,
 				64970A8A2450675200867D23 /* Logger.cpp in Sources */,
 				64970A5424503C7C00867D23 /* GameViewController.m in Sources */,
+				64970A922450734F00867D23 /* Transforms.mm in Sources */,
 				64970A5D24503C7C00867D23 /* main.m in Sources */,
 				64970A5124503C7C00867D23 /* AppDelegate.m in Sources */,
+				64970A9924507EA500867D23 /* RTShaders.metal in Sources */,
 				64970A7F2450624F00867D23 /* RTRenderer.mm in Sources */,
+				64970A8E245072FD00867D23 /* Scene.mm in Sources */,
 				64970A7224503C7C00867D23 /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +306,12 @@
 				64970A7124503C7C00867D23 /* Renderer.m in Sources */,
 				64970A8B2450675200867D23 /* Logger.cpp in Sources */,
 				64970A6924503C7C00867D23 /* GameViewController.mm in Sources */,
+				64970A932450734F00867D23 /* Transforms.mm in Sources */,
 				64970A6F24503C7C00867D23 /* main.m in Sources */,
 				64970A6624503C7C00867D23 /* AppDelegate.m in Sources */,
+				64970A9A24507EA500867D23 /* RTShaders.metal in Sources */,
 				64970A802450624F00867D23 /* RTRenderer.mm in Sources */,
+				64970A8F245072FD00867D23 /* Scene.mm in Sources */,
 				64970A7324503C7C00867D23 /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
