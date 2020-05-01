@@ -110,14 +110,14 @@
 				64970A4524503C7B00867D23 /* ShaderTypes.h */,
 				64970A4624503C7B00867D23 /* Shaders.metal */,
 				64970A4724503C7C00867D23 /* Assets.xcassets */,
-				64970A942450744F00867D23 /* RTShaderTypes.h */,
-				64970A822450629000867D23 /* RTRenderer.h */,
-				64970A7E2450624F00867D23 /* RTRenderer.mm */,
-				64970A9824507EA500867D23 /* RTShaders.metal */,
 				64970A8C245072FD00867D23 /* Scene.h */,
 				64970A8D245072FD00867D23 /* Scene.mm */,
 				64970A912450734F00867D23 /* Transforms.h */,
 				64970A902450734F00867D23 /* Transforms.mm */,
+				64970A942450744F00867D23 /* RTShaderTypes.h */,
+				64970A822450629000867D23 /* RTRenderer.h */,
+				64970A7E2450624F00867D23 /* RTRenderer.mm */,
+				64970A9824507EA500867D23 /* RTShaders.metal */,
 			);
 			path = "GPURTLab Shared";
 			sourceTree = "<group>";
